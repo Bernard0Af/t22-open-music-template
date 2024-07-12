@@ -1,0 +1,27 @@
+.header_container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 3px solid var(--brand-1);
+    height: 100px;
+}
+
+.header_logo{ 
+    font-weight: 600;
+    font-size: 30px;
+    
+}
+
+.header_logo--color {
+    color: var(--brand-1);
+
+}
+
+.theme-mode {
+    color: var(--grey-6);
+    border-radius: 5px;
+    border: none;
+    height: 39px;
+    width: 39px;
+}

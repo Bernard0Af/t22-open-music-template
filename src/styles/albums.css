@@ -1,0 +1,9 @@
+.album_list {
+    list-style: none;
+}
+
+
+.album_card--info {
+    display: flex;
+    
+}
