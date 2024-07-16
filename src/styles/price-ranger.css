@@ -1,0 +1,35 @@
+
+.section_filter--container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    font-weight: 600;
+    padding: 30px 0px 30px 0px;
+}
+
+.section_filter--color {
+    color: var(--brand-1);
+}
+
+.section_filter--input {
+    -webkit-appearance: none;
+    appearance: none;
+    background: transparent;
+    cursor: pointer;
+    width: 100%;
+    outline: none;
+    background-color: var(--brand-1);
+    border-radius: 0.5rem;
+    height: 0.5rem;
+}
+
+.section_filter--input::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    appearance: none;
+    height: 30px;
+    width: 30px;
+    background-color: #fff;
+    border-radius: 50%;
+    border: 0.5rem solid var(--brand-1);
+}
+

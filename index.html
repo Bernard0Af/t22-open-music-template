@@ -8,8 +8,8 @@
     <link rel="stylesheet" href="src/styles/header.css">
     <link rel="stylesheet" href="src/styles/albums.css">
     <link rel="stylesheet" href="src/styles/genres.css">
-    <link rel="stylesheet" href="src/styles/index.css">
     <link rel="stylesheet" href="src/styles/price-ranger.css">
+    <link rel="stylesheet" href="src/styles/index.css">
     <title>Open Music</title>
   </head>
   <body>
@@ -19,110 +19,112 @@
        <h1 class="header_logo">
         <span class="header_logo--color">o</span>pen <span class="header_logo--color">m</span>usic
       </h1>
-       <button class="theme-mode"><img src="src/assets/icons/moon-icon.svg" alt=""></button>
+       <button class="header_button"><img src="src/assets/icons/moon-icon.svg" alt=""></button>
     </header>
 
     <!-- CONTEÚDO PRINCIPAL -->
-    <main>
+    <main class="main_section">
       <!-- SEÇÃO DE FILTRO POR GENERO -->
       <section class="section_gender">
         <!-- DESENVOLVA AQUI OS ELEMENTOS DA SEÇÃO -->
          <h2 class="section_gender--title">Gênero Musical</h2>
-         <ul class="type_gender">
-          <li class="type_gender--iten">Todos</li>
-          <li class="type_gender--iten">Pop</li>
-          <li class="type_gender--iten">MPB</li>
-          <li class="type_gender--iten">Forró</li>
-          <li class="type_gender--iten">Samba</li>
-          <li class="type_gender--iten">Balão</li>
-          <li class="type_gender--iten">Rap</li>
-          <li class="type_gender--iten">Hip-Hop</li>
-         </ul>
+         <article class="type_gender">
+            <button class="type_gender--button">Todos</button>
+            <button class="type_gender--button">Pop</button>
+            <button class="type_gender--button">MPB</button>
+            <button class="type_gender--button">Forró</button>
+            <button class="type_gender--button">Samba</button>
+            <button class="type_gender--button">Balão</button>
+            <button class="type_gender--button">Rap</button>
+            <button class="type_gender--button">Hip-Hop</button>
+         </article>
       </section>
 
       <!-- SEÇÃO DE FILTRO POR PREÇO -->
       <section class="section_filter">
         <!-- DESENVOLVA AQUI OS ELEMENTOS DA SEÇÃO -->
-         <h3 class="section_filter--title">Definir Preço</h3>
-         <h3 class="section_filter--price">Até R$100</h3>
-         <input type="range" class="section_filter--input" min="0" max="100">
+        <div class="section_filter--container">
+          <h3 class="section_filter--title">Definir Preço</h3>
+          <h3 class="section_filter--price">Até <span class="section_filter--color">R$100</span></h3>
+        </div> 
+         <input type="range" class="section_filter--input" min="1" max="100">
       </section>
 
       <!-- SEÇÃO DE ALBUNS -->
-      <section>
+      <section class="section_musics">
         <!-- DESENVOLVA AQUI OS ELEMENTOS DA SEÇÃO -->
-         <h3>Albuns Encontrados</h3>
+         <h3 class="section_musics_title">Albuns Encontrados</h3>
          <ul class="album_list">
-          <li class="album_card">
-            <img src="src/assets/imgs/cover-1.jpg" alt="">
+          <li id="card_1" class="album_card">
+            <img class="album_card--img" src="src/assets/imgs/cover-1.jpg" alt="">
             <p class="album_card--paragraph">Acabou o Chorare</p>
             <div class="album_card--info">
               <h4>Novos Baianos</h4>
               <h4>MPB</h4>
             </div>
             <div class="album_card--buy">
-              <h4>R$137,91</h4>
-              <button>Comprar</button>
+              <h4 class="album_card--value">R$137,91</h4>
+              <button class="album_card--button">Comprar</button>
             </div>          
           </li>
-          <li>
-            <img src="src/assets/imgs/cover-2.jpg" alt="">
+          <li id="card_2" class="album_card">
+            <img class="album_card--img" src="src/assets/imgs/cover-2.jpg" alt="">
             <p class="album_card--paragraph">The Wall</p>
             <div class="album_card--info">
               <h4>Pink Floyd</h4>
               <h4>Rock</h4>
             </div>
             <div class="album_card--buy">
-              <h4>R$123,56</h4>
-              <button>Comprar</button>
+              <h4 class="album_card--value">R$123,56</h4>
+              <button class="album_card--button">Comprar</button>
             </div>
           </li>
-          <li>
-            <img src="src/assets/imgs/cover-3.jpg" alt="">
+          <li id="card_3" class="album_card">
+            <img class="album_card--img" src="src/assets/imgs/cover-3.jpg" alt="">
             <p class="album_card--paragraph">To Pimp a butterfly</p>
             <div class="album_card--info">
               <h4>Kendrick Lamar</h4>
               <h4>Rap</h4>
             </div>
             <div class="album_card--buy">
-              <h4>R$102,66</h4>
-              <button>Comprar</button>
+              <h4 class="album_card--value">R$102,66</h4>
+              <button class="album_card--button">Comprar</button>
             </div>
           </li>
-          <li class="album_card">
-            <img src="src/assets/imgs/cover-1.jpg" alt="">
+          <li id="card_4" class="album_card">
+            <img class="album_card--img" src="src/assets/imgs/cover-2.jpg" alt="">
             <p class="album_card--paragraph">Acabou o Chorare</p>
             <div class="album_card--info">
               <h4>Novos Baianos</h4>
               <h4>MPB</h4>
             </div>
             <div class="album_card--buy">
-              <h4>R$137,91</h4>
-              <button>Comprar</button>
+              <h4 class="album_card--value">R$137,91</h4>
+              <button class="album_card--button">Comprar</button>
             </div>          
           </li>
-          <li>
-            <img src="src/assets/imgs/cover-2.jpg" alt="">
+          <li id="card_5" class="album_card">
+            <img class="album_card--img" src="src/assets/imgs/cover-1.jpg" alt="">
             <p class="album_card--paragraph">The Wall</p>
             <div class="album_card--info">
               <h4>Pink Floyd</h4>
               <h4>Rock</h4>
             </div>
             <div class="album_card--buy">
-              <h4>R$123,56</h4>
-              <button>Comprar</button>
+              <h4 class="album_card--value">R$123,56</h4>
+              <button class="album_card--button">Comprar</button>
             </div>
           </li>
-          <li>
-            <img src="src/assets/imgs/cover-3.jpg" alt="">
+          <li id="card_6" class="album_card">
+            <img class="album_card--img" src="src/assets/imgs/cover-3.jpg" alt="">
             <p class="album_card--paragraph">To Pimp a butterfly</p>
             <div class="album_card--info">
               <h4>Kendrick Lamar</h4>
               <h4>Rap</h4>
             </div>
             <div class="album_card--buy">
-              <h4>R$102,66</h4>
-              <button>Comprar</button>
+              <h4 class="album_card--value">R$102,66</h4>
+              <button class="album_card--button">Comprar</button>
             </div>
           </li>
          </ul>

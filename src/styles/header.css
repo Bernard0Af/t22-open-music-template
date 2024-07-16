@@ -4,13 +4,15 @@
     justify-content: space-between;
     align-items: center;
     border-bottom: 3px solid var(--brand-1);
-    height: 100px;
+    height: 6.25rem;
+    position: fixed;
+    width: 64rem;
+    background-color: var(--grey-8);
 }
 
 .header_logo{ 
     font-weight: 600;
-    font-size: 30px;
-    
+    font-size: 1.875rem;
 }
 
 .header_logo--color {
@@ -18,10 +20,11 @@
 
 }
 
-.theme-mode {
+.header_button {
     color: var(--grey-6);
     border-radius: 5px;
     border: none;
-    height: 39px;
-    width: 39px;
+    height: 2.438rem;
+    width: 2.438rem;
+    cursor: pointer;
 }

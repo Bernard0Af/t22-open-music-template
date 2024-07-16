@@ -1,0 +1,63 @@
+@media(min-width: 1025px) and (max-width: 1360px) {
+    .header_container {
+        width: clamp(44rem, -4rem + 100vw, 64rem);
+    }
+
+    .section_filter {
+        width: clamp(44rem, -4rem + 100vw, 64rem);
+    }
+
+    .album_list {
+        width: clamp(44rem, -4rem + 100vw, 64rem);
+    }
+}
+
+@media(min-width: 768px) and (max-width: 1024px) {
+    .header_container {
+        width: clamp(44rem, -4rem + 100vw, 60rem);
+    }
+
+    .section_filter {
+        width: clamp(44rem, -4rem + 100vw, 60rem);
+    }
+
+    .album_list {
+        width: clamp(44rem, -4rem + 100vw, 60rem);
+    }
+
+    .album_card {
+        flex-grow: 1;
+    }
+}
+
+@media(min-width: 1024px) {
+    .album_card {
+        flex-basis: 300px;
+    }
+}
+
+@media(min-width: 420px) and (max-width: 767px) {
+    .header_container {
+        width: clamp(22.25rem, -4rem + 100vw, 43.938rem);
+    }
+
+    .section_gender {
+        width: clamp(22.25rem, -4rem + 100vw, 43.938rem);
+    }
+
+    .type_gender {
+        justify-content: center;
+    }
+
+    .section_filter {
+        width: clamp(22.25rem, -4rem + 100vw, 43.938rem);
+    }
+
+    .section_musics {
+        width: clamp(22.25rem, -4rem + 100vw, 43.938rem);
+    }
+
+    .album_card {
+        flex-grow: 1;
+    }
+}

@@ -17,8 +17,14 @@
 body {
     font-family: "Inter";
     background-color: var(--grey-8) ;
-    width: 1024px;
+    width: 64rem;
     margin: auto;
+    color: var(--grey-2);
+    padding:0 2rem 0 2rem;
+}
+
+.main_section {
+    padding-top: 150px;
 }
 
 
