@@ -1,8 +1,14 @@
 import { applyInputRangeStyle } from "./inputRange.js";
 import { albumList } from "./albumsDataBase.js";
+import { dark } from "./theme.js";
+
 
 function routine() {
     applyInputRangeStyle()
+    renderCard(albumList);
+    dark();
+    inputValue();  
+    filterEvents()
 }
 
 routine()
@@ -29,6 +35,7 @@ function createCard(card) {
     albumBuy.classList.add("album_card--buy");
     albumValue.classList.add("album_card--value");
     button.classList.add("album_card--button");
+    genre.classList.add("album_card-genre");
 
     li.appendChild(img);
     li.appendChild(p);
@@ -58,7 +65,60 @@ function renderCard(albumList) {
 
     albumList.forEach(card => {
         ul.append(createCard(card))
-    });
+    })      
 }
 
-renderCard(albumList);
+function inputValue() {
+    const input = document.querySelector(".section_filter--input");
+    const h3 = document.querySelector(".section_filter--color");
+  
+    input.addEventListener("input", (e) => {
+        const inputValue = e.target.value;
+        h3.innerHTML = `R$ ${inputValue}`;
+    })
+    
+  }
+
+function filterEvents() {
+    const input = document.querySelector(".section_filter--input");
+    const buttons = document.querySelectorAll(".type_gender--button");
+    
+    let filterGenre = "Todos";
+    let filterPrice = Number(input.value);
+    
+    input.addEventListener("input", ()=> {
+        filterPrice = Number(input.value)
+        const albumFilter = filter(albumList, filterGenre, filterPrice);
+        renderCard(albumFilter)
+    })
+
+    buttons.forEach((btn) => 
+        btn.addEventListener("click", (event) => {
+            filterGenre = event.target.innerText;
+            const albumFilter = filter(albumList, filterGenre, filterPrice);
+            renderCard(albumFilter)
+        })
+    )
+}
+
+function filter(albumList, filterGenre = "Todos", filterPrice) {
+    return albumList.filter(
+        (album) =>
+          (album.genre === filterGenre || filterGenre === "Todos") &&
+          album.price <= filterPrice
+      );
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+

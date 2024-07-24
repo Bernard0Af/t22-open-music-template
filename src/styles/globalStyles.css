@@ -27,7 +27,9 @@ body {
     padding-top: 150px;
 }
 
-
-
+.dark_mode {
+    background-color: var(--grey-1) !important;
+    color: var(--grey-8);
+}
 
 

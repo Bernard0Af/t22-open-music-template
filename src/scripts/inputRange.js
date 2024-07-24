@@ -1,3 +1,4 @@
+
 export function applyInputRangeStyle() {
     const inputRange = document.querySelector(".section_filter--input");
   
@@ -9,4 +10,10 @@ export function applyInputRangeStyle() {
       ${runnableTrackProgress}%, var(--grey-5) ${runnableTrackProgress}%)`;
     });
   }
+
+
+
+
+
+
 

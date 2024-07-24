@@ -19,8 +19,34 @@
     cursor: pointer;
 }
 
-.type_gender--button:hover {
+.selected {
+    background-color: var(--grey-8) !important;
+    color: var(--grey-2) !important;
+    border: 2px solid var(--grey-2) !important;
+}
+
+.dark_mode .type_gender--button {
+    background-color: var(--grey-2);
+    color: var(--grey-8);
     border: 2px solid var(--grey-2);
+}
+
+.dark_mode .type_gender--button:hover{
+    background-color: var(--grey-8);
+    color: var(--grey-2);
+    border: 2px solid var(--grey-8);
+}
+
+.type_gender--button:hover {
+    background-color: var(--grey-8);
+    color: var(--grey-2);
+    border: 2px solid var(--grey-2);
+}
+
+.selectDark .type_gender--button {
+    background-color: var(--grey-8);
+    color: var(--grey-2);
+    border: 2px solid var(--grey-8);
 }
 
 .section_gender--title {

@@ -13,27 +13,39 @@
     display: flex;
     flex-wrap: wrap;
     gap: 20px;
-    justify-content: space-between;
+    justify-content: center;
 }
 
 .album_card {
     width: 308px;
     height: 455px;
-    background-color: var(--grey-7);
+    background-color: var(--grey-7) !important;
+    border-radius: 5px;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
     gap: 1rem;
 }
 
+.dark_mode .album_card {
+    background-color: var(--grey-2) !important;
+    color: var(--grey-8);
+    border-radius: 5px;
+}
+
 .album_card:hover {
-    background-color: var(--grey-6);
+    background-color: var(--grey-6) !important;
+}
+
+.dark_mode .album_card:hover {
+    background-color: var(--grey-3) !important;
 }
 
 .album_card--img {
     width: 100%;
     height: 18.125rem;
     object-fit: cover;
+    border-radius: 5px 5px 0 0;
 }
 
 .album_card--paragraph {

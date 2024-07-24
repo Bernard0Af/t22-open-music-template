@@ -10,6 +10,11 @@
     background-color: var(--grey-8);
 }
 
+.dark_mode .header_container {
+    background-color: var(--grey-1) !important;
+    color: var(--grey-8);
+}
+
 .header_logo{ 
     font-weight: 600;
     font-size: 1.875rem;
@@ -27,4 +32,12 @@
     height: 2.438rem;
     width: 2.438rem;
     cursor: pointer;
+}
+
+.dark_mode .header_button {
+    background-color: var(--grey-2) !important;
+}
+
+.dark_mode .header_button:hover {
+    background-color: var(--grey-3) !important;
 }
