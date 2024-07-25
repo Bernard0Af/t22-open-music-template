@@ -1,7 +1,8 @@
 import { applyInputRangeStyle } from "./inputRange.js";
-import { albumList } from "./albumsDataBase.js";
 import { dark } from "./theme.js";
+import { getAllAlbums } from "./api.js";
 
+var albumList = await getAllAlbums();
 
 function routine() {
     applyInputRangeStyle()
@@ -84,7 +85,7 @@ function filterEvents() {
     const buttons = document.querySelectorAll(".type_gender--button");
     
     let filterGenre = "Todos";
-    let filterPrice = Number(input.value);
+    let filterPrice = input.value;
     
     input.addEventListener("input", ()=> {
         filterPrice = Number(input.value)
@@ -101,16 +102,13 @@ function filterEvents() {
     )
 }
 
-function filter(albumList, filterGenre = "Todos", filterPrice) {
+function filter(albumList, filterGenre, filterPrice) {
     return albumList.filter(
         (album) =>
           (album.genre === filterGenre || filterGenre === "Todos") &&
           album.price <= filterPrice
       );
 }
-
-
-
 
 
 

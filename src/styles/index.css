@@ -61,3 +61,29 @@
         flex-grow: 1;
     }
 }
+
+@media(min-width:370px) and (max-width: 419px) {
+    .header_container {
+        width: clamp(19.188rem, -3.938rem + 100vw, 22.25rem);
+    }
+
+    .section_gender {
+        width: clamp(19.188rem, -3.938rem + 100vw, 22.25rem);
+    }
+
+    .type_gender {
+        justify-content: center;
+    }
+
+    .section_filter {
+        width: clamp(19.188rem, -3.938rem + 100vw, 22.25rem);
+    }
+
+    .section_musics {
+        width: clamp(19.188rem, -3.938rem + 100vw, 22.25rem);
+    }
+
+    .album_card {
+        flex-grow: 1;
+    }
+}
