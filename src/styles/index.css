@@ -1,4 +1,8 @@
 @media(min-width: 1025px) and (max-width: 1360px) {
+    body {
+        width: clamp(44rem, -4rem + 100vw, 64rem);
+    }
+    
     .header_container {
         width: clamp(44rem, -4rem + 100vw, 64rem);
     }
@@ -13,6 +17,10 @@
 }
 
 @media(min-width: 768px) and (max-width: 1024px) {
+    body {
+        width: clamp(44rem, -4rem + 100vw, 60rem);
+    }
+    
     .header_container {
         width: clamp(44rem, -4rem + 100vw, 60rem);
     }
@@ -37,6 +45,10 @@
 }
 
 @media(min-width: 420px) and (max-width: 767px) {
+    body {
+        width: clamp(22.25rem, -4rem + 100vw, 43.938rem);
+    }
+    
     .header_container {
         width: clamp(22.25rem, -4rem + 100vw, 43.938rem);
     }
@@ -63,6 +75,10 @@
 }
 
 @media(min-width:370px) and (max-width: 419px) {
+    body {
+        width: clamp(19.188rem, -3.938rem + 100vw, 22.25rem);
+    }
+    
     .header_container {
         width: clamp(19.188rem, -3.938rem + 100vw, 22.25rem);
     }
